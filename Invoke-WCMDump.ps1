@@ -1,5 +1,4 @@
-function Invoke-WCMDump
-{
+
       <#
       .SYNOPSIS
          Dumps Windows credentials from the Windows Credential Manager for the current user.
@@ -9,8 +8,7 @@ function Invoke-WCMDump
         information about each one. Passwords can be retrieved for "Generic" type credentials,
         but not for "Domain" type credentials.
       .EXAMPLE
-        PS>Import-Module .\Invoke-WCMDump.ps1
-        PS>Invoke-WCMDump
+        PS>.\Invoke-WCMDump.ps1
             Username         : testusername
             Password         : P@ssw0rd!
             Target           : TestApplication
@@ -261,4 +259,3 @@ function Invoke-WCMDump
     $add = Add-Type -TypeDefinition $source -Language CSharp -PassThru
     $loadAll = [Credential]::LoadAll()
     Write-Output $loadAll
-}
