@@ -9,8 +9,7 @@ Author: Barrett Adams (@peewpw)
 
 ## Example
 ```
-PS>Import-Module .\Invoke-WCMDump.ps1
-PS>Invoke-WCMDump
+PS>.\Invoke-WCMDump.ps1
     Username         : testusername
     Password         : P@ssw0rd!
     Target           : TestApplication
